@@ -1,0 +1,13 @@
+name = "Goose"
+grammar = "goose"
+path_suffixes = ["goose"]
+line_comments = ["//"]
+block_comments = [{ start = "/*", end = "*/", close = true }]
+autoclose_before = ";:.,=}])>"
+brackets = [
+    { start = "{", end = "}", close = true, newline = true },
+    { start = "[", end = "]", close = true, newline = true },
+    { start = "(", end = ")", close = true, newline = false },
+    { start = "\"", end = "\"", close = true, newline = false, not_in = ["string", "raw_string_literal"] },
+    { start = "'", end = "'", close = true, newline = false, not_in = ["string", "char_literal"] },
+]

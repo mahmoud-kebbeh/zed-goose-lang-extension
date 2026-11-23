@@ -1,0 +1,16 @@
+id = "goose-lang"
+name = "Goose Extension"
+description = "Goose language support for Zed"
+version = "0.1.0"
+schema_version = 1
+authors = ["Mahmoud Kebbeh"]
+repository = "https://github.com/mahmoud-kebbeh/zed-goose-lang-extension"
+
+[grammars.goose]
+repository = "https://github.com/aardappel/goose"
+rev = "2239b92eb2ae0e8f390f98640b09ff57a17698fc"
+path = "tree-sitter"
+
+[goose]
+submodule = "extensions/goose-lang"
+version = "0.1.0"
